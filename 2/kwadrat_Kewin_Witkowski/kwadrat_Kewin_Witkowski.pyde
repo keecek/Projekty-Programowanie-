@@ -5,6 +5,7 @@ def setup():
     kolor = {"red":(255,0,0), "green":(0,255,0), "blue":(0,0,255)}
     global kolor
     fill(*kolor["red"])
+    
 def f0():
     global x, y, i, kolor
     x+=1
@@ -38,11 +39,12 @@ def f3():
 
 def draw():
     global x, y, i
-    rect(x, y, 60, 60)
+    rect(x, y, width/10, height/10) # warto używać zależnych zamiast sztywnych wartości
     listf = [f0,f1,f2,f3]
     listf[i]()
     
-
+# zapomniałeś o opcji dodania zamknięcia programu
+# 1,75pkt
 
 
     
