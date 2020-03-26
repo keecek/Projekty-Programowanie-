@@ -10,4 +10,5 @@ def draw():
         rect(mouseY,mouseX, mouseX, mouseY)
     else:
         line(500,500, mouseX, mouseY)
-    
+
+#2pkt
