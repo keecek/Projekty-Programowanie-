@@ -45,6 +45,7 @@ def draw():
     
 # zapomniałeś o opcji dodania zamknięcia programu
 # 1,75pkt
+# plus do aktywności za ładne wyliczenia na funkcjach
 
 
     
