@@ -45,3 +45,4 @@ def hover(x, y):
     return (1 if (mouseX >= x and mouseX <= x + sizeofText and
                  mouseY >= y and mouseY <= y + sizeofText)
              else 0)
+# 2pkt i '+' za ładną organizację kodu
