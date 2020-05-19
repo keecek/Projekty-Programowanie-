@@ -1,4 +1,4 @@
-class powitanie():
+class Czlowiek(): # klasy mają wskazywać na obiekty
     def __init__(self, argX, argY, argZ):
         self.pozycReki = 1 
         self.x = argX
@@ -7,14 +7,14 @@ class powitanie():
         self.kierunek = 1
         self.ruchReki = argX
         
-    def reka(self, stopnie):
+    def witaj(self, stopnie):
         if self.pozycReki >= 30 or self.pozycReki <= 0:
             self.kierunek *= -1
         self.pozycReki += stopnie * self.kierunek
         self.ruchReki += 1.5 * self.kierunek
         
         
-    def czlowiek(self):
+    def rysuj(self): # metody to czynności
         circle(self.x, self.y, self.z)
         line(self.x, self.y+12, self.x, self.y+60)
         line(self.x, self.y+60, self.x+20, self.y+90)
@@ -24,18 +24,21 @@ class powitanie():
     
 def setup():
     size(300, 300)
-    global Powitanie, stopnie, czlowiek
-    Powitanie = powitanie(width/2, height/2, 25)
-    
+    global kewin, jacek
+    kewin = Czlowiek(width/2, height/2, 25) # praktyki wskazują, aby zmienne były z małej, a nazwy klas z dużej ;)
+    jacek = Czlowiek(width/4, height/4, 35) # miały być dwa obiekty, zwróć uwagę, że dzieki klasie wystaczy dopisać na prawdę niewiele by osiągnąć kolejny obiekt o tak samo skomplikowanej logice
     
 def mouseWheel(event):
-    Powitanie.reka(5)
+    kewin.witaj(5)
+    jacek.witaj(10)
     
 def draw():
     background(120)
-    if Powitanie.pozycReki >= 15:    
+    if kewin.pozycReki >= 15:    
         textSize(18)
-        text("eluwina", 180, 100)
-    Powitanie.czlowiek()
+        text("eluwina", 180, 100) # to spokojnie mogłaby być metoda w klasie, a tekst powitania być agumentem i być indywidualny dla ludków, możnaby też dorysować chmurkę :)
+    kewin.rysuj()
+    jacek.rysuj()
 
-    
+# miło się sprawdza takie zadania domowe :) plus do aktywnosci za pomysł, lubię ten machający do mnie tłum stickmanów, nawet jeśli wyglądają bardziej jakby chcieli zatrzymać machaniem autobus ;D
+# 1,75pkt
