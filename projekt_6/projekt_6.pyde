@@ -15,8 +15,8 @@ class PasiastyKwadrat(Kwadrat): # dziedziczymy po klasie Kwadrat aby móć skorz
             line(x+_xLinii_, y, x+_xLinii_, y+self.bok)
             _xLinii_ +=space
             
-class przekatna(Kwadrat):
-    def przekatna(self, x, y):
+class Przekatna(Kwadrat): # nazwy klas poiwnny być z dużej litery
+    def rysuj(self, x, y): # metody powinny być czasownikami
         Kwadrat.sketch(self, x, y)
         line(x,y,x+self.bok,y+self.bok)
         line(x,y+self.bok,x+self.bok,y)
@@ -36,7 +36,9 @@ def setup():
     duzyPasiastyKwadrat  = PasiastyKwadrat(120.0)
     duzyPasiastyKwadrat.sketchPasiasty(300, 50, 12)
     duzyPasiastyKwadrat.sketch(350, 300) # na obiekcie typu klasy pochodnej można wywołać metodę klasy bazowej ( rysujemy kwadrat bez pasków )
-    malaPrzekatna = przekatna(80.0)
-    malaPrzekatna.przekatna(100,200)
-    duzaPrzekatna = przekatna(200.0)
-    duzaPrzekatna.przekatna(150,300)
+    malaPrzekatna = Przekatna(80.0)
+    malaPrzekatna.rysuj(100,200)
+    duzaPrzekatna = Przekatna(200.0)
+    duzaPrzekatna.rysuj(150,300) # czyż nie jest czytelniej, jeśli się trzymamy dobrych zasad? ;)
+    
+# 1,75pkt
