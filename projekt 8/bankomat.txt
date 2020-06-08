@@ -1,0 +1,8 @@
+class Bankomat():
+	iloscPieniedzy = []
+	Pieniadze = []
+	wyplacPieniadze()
+	stanKonta()
+
+class Pieniadz():
+	__init__(self, rodzajPieniadza)	
