@@ -1,0 +1,8 @@
+Mieszkanie studenta 
+Student gra na minikeyboardzie, lecz po chwili stwierdza, że chciałby go użyć
+w programie do tworzenia muzyki
+Po podłączeniu urządzenia do komputera, każdy przycisk staje się kompletnie programowalny,
+co pozwala na większą swobodę w obsłudze programu.
+WZORZEC: ADAPTER
+DLACZEGO: Urządzenie, mimo bazowo wgranego oprogramowania które odtwarza dzwięk po kliknięciu
+klawisza, posiada opcję konfigurowania działania przycisków po podłączeniu do komputera.
