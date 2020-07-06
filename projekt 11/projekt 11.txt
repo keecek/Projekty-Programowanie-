@@ -6,3 +6,6 @@ co pozwala na większą swobodę w obsłudze programu.
 WZORZEC: ADAPTER
 DLACZEGO: Urządzenie, mimo bazowo wgranego oprogramowania które odtwarza dzwięk po kliknięciu
 klawisza, posiada opcję konfigurowania działania przycisków po podłączeniu do komputera.
+
+# ja się zgodzę, oryginalny i dobry przykład, ale część roku nie zgadła
+# 1,5pkt
