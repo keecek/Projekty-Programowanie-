@@ -76,9 +76,11 @@ class tescik(unittest.TestCase):
 class testujLudzie(unittest.TestCase):
     def __init__(self, *args, **kwargs):
         super(testujLudzie, self).__init__(*args, **kwargs)
-        self.cust = Customer
-        self.cust2 = Library
+        self.cust = Customer()
+        self.cust2 = Customer()
  
     def testSameBooks(self):
-        self.assertNotEqual(self.cust.book, self.cust2.book)
+        self.assertEqual(self.cust.book, self.cust2.book)
+        
+#1,75pkt
  
