@@ -2,7 +2,9 @@ class Bankomat():
 	iloscPieniedzy = []
 	Pieniadze = []
 	wyplacPieniadze()
-	stanKonta()
+	stanKonta() # to powinno się raczej znaleść w klasie konto/karta
 
 class Pieniadz():
-	__init__(self, rodzajPieniadza)	
+	__init__(self, rodzajPieniadza)	# w sensie waluta? nominał?
+
+0,75/1,5pkt za tę część
